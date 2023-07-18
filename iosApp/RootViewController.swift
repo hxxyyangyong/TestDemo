@@ -30,17 +30,17 @@ class RootViewController : UIViewController {
     @objc func buttonAction(_ button:UIButton) {
         
         if (button.tag == 0){
-            let mainViewController = Platform_iosKt.onceImageTest(needShowImage: true,lifeCycleDelegate_: nil)
+            let mainViewController = Platform_iosKt.onceImageTest(needShowImage: true,lifeCycleDelegate: nil)
             self.navigationController?.pushViewController(mainViewController, animated: true)
         }
         else if (button.tag == 1){
-            let mainViewController = Platform_iosKt.onceImageTest(needShowImage: false,lifeCycleDelegate_: nil)
+            let mainViewController = Platform_iosKt.onceImageTest(needShowImage: false,lifeCycleDelegate: nil)
             self.navigationController?.pushViewController(mainViewController, animated: true)
         }else if (button.tag == 2){
             let abcViewController = AbcViewController()
             self.navigationController?.pushViewController(abcViewController, animated: true)
         }else if (button.tag == 3){
-            let mainViewController = Platform_iosKt.onceImageTest(needShowImage: false,lifeCycleDelegate_: nil)
+            let mainViewController = Platform_iosKt.onceImageTest(needShowImage: false,lifeCycleDelegate: nil)
             self.present(mainViewController, animated: false)
         }
         
