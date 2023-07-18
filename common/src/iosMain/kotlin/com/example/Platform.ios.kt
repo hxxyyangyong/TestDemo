@@ -14,14 +14,6 @@ actual fun getPlatform(): Platform = IOSPlatform()
 
 
 @ExperimentalResourceApi
-fun onceImageTest(needShowImage:Boolean,lifeCycleDelegate: LifeCycleDelegate) : UIViewController = ComposeUIViewController {
-    lifeCycleDelegate.changeState {
-        println("UIViewController life cycle callback： $it")
-    }
-    OnceImage(needShowImage = needShowImage)
-}
-
-@ExperimentalResourceApi
 fun onceImageTest(needShowImage:Boolean,lifeCycleDelegate: LifeCycleDelegate?) : UIViewController = ComposeUIViewController {
     if(lifeCycleDelegate != null) {
         lifeCycleDelegate.changeState {

@@ -37,9 +37,8 @@ class RootViewController : UIViewController {
             let mainViewController = Platform_iosKt.onceImageTest(needShowImage: false,lifeCycleDelegate_: nil)
             self.navigationController?.pushViewController(mainViewController, animated: true)
         }else if (button.tag == 2){
-            let mainViewController = UIViewController()
-            mainViewController.title = "Native VC"
-            self.navigationController?.pushViewController(mainViewController, animated: true)
+            let abcViewController = AbcViewController()
+            self.navigationController?.pushViewController(abcViewController, animated: true)
         }else if (button.tag == 3){
             let mainViewController = Platform_iosKt.onceImageTest(needShowImage: false,lifeCycleDelegate_: nil)
             self.present(mainViewController, animated: false)

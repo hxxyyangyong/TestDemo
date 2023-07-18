@@ -13,6 +13,7 @@
 		239C448E5EBA024396F7878D /* Pods_iosApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E2DF312C1BFC62FA7AE7857 /* Pods_iosApp.framework */; };
 		659358FC2A665EFD0045433A /* UIViewController+SS.m in Sources */ = {isa = PBXBuildFile; fileRef = 659358FA2A665EFD0045433A /* UIViewController+SS.m */; };
 		659358FF2A665F160045433A /* LifeCycleManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 659358FE2A665F160045433A /* LifeCycleManager.m */; };
+		659359012A6679A80045433A /* AbcViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659359002A6679A80045433A /* AbcViewController.swift */; };
 		65B902E62A61414B00757F00 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B902E52A61414B00757F00 /* RootViewController.swift */; };
 		7555FF83242A565900829871 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7555FF82242A565900829871 /* ContentView.swift */; };
 /* End PBXBuildFile section */
@@ -28,6 +29,7 @@
 		659358FB2A665EFD0045433A /* UIViewController+SS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+SS.h"; sourceTree = "<group>"; };
 		659358FD2A665F160045433A /* LifeCycleManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LifeCycleManager.h; sourceTree = "<group>"; };
 		659358FE2A665F160045433A /* LifeCycleManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LifeCycleManager.m; sourceTree = "<group>"; };
+		659359002A6679A80045433A /* AbcViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbcViewController.swift; sourceTree = "<group>"; };
 		65B902E52A61414B00757F00 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RootViewController.swift; path = ../RootViewController.swift; sourceTree = "<group>"; };
 		7555FF7B242A565900829871 /* iosApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iosApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7555FF82242A565900829871 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -98,6 +100,7 @@
 				659358FB2A665EFD0045433A /* UIViewController+SS.h */,
 				659358FA2A665EFD0045433A /* UIViewController+SS.m */,
 				65B902E52A61414B00757F00 /* RootViewController.swift */,
+				659359002A6679A80045433A /* AbcViewController.swift */,
 				058557BA273AAA24004C7B11 /* Assets.xcassets */,
 				7555FF82242A565900829871 /* ContentView.swift */,
 				7555FF8C242A565B00829871 /* Info.plist */,
@@ -228,6 +231,7 @@
 				7555FF83242A565900829871 /* ContentView.swift in Sources */,
 				659358FC2A665EFD0045433A /* UIViewController+SS.m in Sources */,
 				65B902E62A61414B00757F00 /* RootViewController.swift in Sources */,
+				659359012A6679A80045433A /* AbcViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
