@@ -21,6 +21,16 @@ fun onceImageTest(needShowImage:Boolean,lifeCycleDelegate: LifeCycleDelegate) : 
     OnceImage(needShowImage = needShowImage)
 }
 
+@ExperimentalResourceApi
+fun onceImageTest(needShowImage:Boolean,lifeCycleDelegate: LifeCycleDelegate?) : UIViewController = ComposeUIViewController {
+    if(lifeCycleDelegate != null) {
+        lifeCycleDelegate.changeState {
+            println("UIViewController life cycle callback： $it")
+        }
+    }
+    OnceImage(needShowImage = needShowImage)
+}
+
 fun GCMethod(){
     GC.collect()
 }

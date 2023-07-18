@@ -14,7 +14,7 @@ class RootViewController : UIViewController {
         
         self.navigationController?.navigationBar.backgroundColor = UIColor.red;
         self.view.backgroundColor = UIColor.white
-        let buttonNames = ["Composevc-image","Composevc-none-image","Native vc"];
+        let buttonNames = ["Composevc-image","Composevc-none-image","Native vc","present"];
         var yCrood = 100;
         for  i in 0 ... buttonNames.count-1 {
             let button = UIButton(frame: CGRectMake(15, CGFloat(yCrood), UIScreen.main.bounds.size.width - 30, 40))
@@ -30,16 +30,20 @@ class RootViewController : UIViewController {
     @objc func buttonAction(_ button:UIButton) {
         
         if (button.tag == 0){
-            let mainViewController = Platform_iosKt.onceImageTest(needShowImage: true,lifeCycleDelegate: LifeCycleManager.shareInstance())
+            let mainViewController = Platform_iosKt.onceImageTest(needShowImage: true,lifeCycleDelegate_: nil)
             self.navigationController?.pushViewController(mainViewController, animated: true)
         }
         else if (button.tag == 1){
-            let mainViewController = Platform_iosKt.onceImageTest(needShowImage: false,lifeCycleDelegate: LifeCycleManager.shareInstance())
+            let mainViewController = Platform_iosKt.onceImageTest(needShowImage: false,lifeCycleDelegate_: nil)
             self.navigationController?.pushViewController(mainViewController, animated: true)
         }else if (button.tag == 2){
             let mainViewController = UIViewController()
             mainViewController.title = "Native VC"
             self.navigationController?.pushViewController(mainViewController, animated: true)
+        }else if (button.tag == 3){
+            let mainViewController = Platform_iosKt.onceImageTest(needShowImage: false,lifeCycleDelegate_: nil)
+            self.present(mainViewController, animated: false)
         }
+        
     }
 }
